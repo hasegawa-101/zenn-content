@@ -5,12 +5,24 @@
   "main": "index.js",
   "scripts": {
     "create": "npx zenn new:article",
-    "start": "npx zenn preview"
+    "start": "npx zenn preview",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "zenn-cli": "^0.1.153"
+    "zenn-cli": "^0.1.154"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "textlint": "^14.0.4",
+    "textlint-rule-preset-ja-technical-writing": "^10.0.1",
+    "textlint-rule-preset-jtf-style": "^2.3.14"
+  },
+  "lint-staged": {
+    "*.md": [
+      "npx textlint --fix ./articles/*.md"
+    ]
   }
 }
