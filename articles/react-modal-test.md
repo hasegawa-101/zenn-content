@@ -36,7 +36,7 @@ export const exampleModal = () => {
 };
 ```
 
-Jest、もしくはVitestでreact-modalを使用したモーダルのテストをする際に、以下のようなエラーが発生するはずです。
+testing-libraryを使用して、react-modalを使用したモーダルのテストをする際に、以下のようなエラーが発生するはずです。
 
 ```bash
 Error: react-modal: No elements were found for selector #root.
@@ -47,7 +47,7 @@ Error: react-modal: No elements were found for selector #root.
 テストコードに以下のコードを追加することで解消できます。
 
 ```typescript
-beforeAll(() => {
+  beforeAll(() => {
     const app = document.createElement("div")
     app.id = "root" // 指定しているルートとなる要素を作成
   
