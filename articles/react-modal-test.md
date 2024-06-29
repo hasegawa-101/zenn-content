@@ -2,7 +2,7 @@
 title: "テスト時にreact-modalが原因で発生するエラー解消方法"
 emoji: "🤫"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [ "react", "vitest", "react-modal" ]
+topics: [ "react", "テスト"]
 published: false
 ---
 
