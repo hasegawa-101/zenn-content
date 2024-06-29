@@ -3,7 +3,7 @@ title: "テスト時にreact-modalが原因で発生するエラー解消方法"
 emoji: "🤫"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [ "react", "テスト"]
-published: false
+published: true
 ---
 
 現在react-modalを使うことはあまりないですが、備忘録も兼ねて。
