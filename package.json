@@ -6,6 +6,7 @@
   "scripts": {
     "create": "npx zenn new:article",
     "start": "npx zenn preview",
+    "textlint": "textlint --cache **/*.md",
     "prepare": "husky"
   },
   "keywords": [],
@@ -22,7 +23,7 @@
   },
   "lint-staged": {
     "*.md": [
-      "npx textlint --fix ./articles/*.md"
+      "npx textlint ./articles/*.md"
     ]
   }
 }
